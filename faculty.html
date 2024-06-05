@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Member</title>
+  <link rel="icon" type="image/x-icon" href="image/icon.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Moul&display=swap" rel="stylesheet">
+  <style>
+    .freehand-regular {
+      font-family: "Freehand", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 100%;
+    }
+
+    .menu {
+      background-color: #044bb4;
+    }
+
+    .menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: left;
+    }
+
+    .menu ul li {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .menu ul li:last-child {
+      margin-right: 0;
+    }
+
+    .menu ul li a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .menu ul li:hover {
+      background-color: #fffcfc7e;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #044bb4;
+      min-width: 400px; /* Set a minimum width */
+      padding: 10px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: left; /* Align text to the left */
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu li {
+      display: block;
+    }
+    .dropdown-menu li a {
+      display: block;
+      padding: 10px 20px;
+      color: #aa2d2d;
+      text-decoration: none;
+      font-size: 12px;
+      text-align: right;
+    }
+    .dropdown-menu li:hover {
+      background-color: #db0f0f;
+    }
+    @media screen and (max-width: 768px) {
+      .menu ul li {
+        display: block;
+        margin: 1;
+      }
+      .dropdown {
+        position: static;
+      }
+      .dropdown-menu {
+        position: static;
+        display: none;
+      }
+      .dropdown.active .dropdown-menu {
+        display: block;
+      }
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        width: 1904px;
+        height: auto;
+        align-items: center;
+    }
+
+    .group1 {
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      flex-wrap: wrap;
+      gap: 10px; /* Adds space between the images */
+    }
+
+    .group1 img {
+      width: 100%;
+      max-width: 620px;
+    }
+
+    .scoll{
+      color: #fff;
+      font-family: "Moul", serif;
+      font-weight: 200;
+      text-align: center;
+      font-size: 70%;
+    }
+    .free {
+        font-family: "Moul", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1005;
+      text-align: center;
+    }
+
+    .footer {
+  background-color:#044bb4;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer .social-icons {
+  margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer .social-icons a img.social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.vdo {
+  display: contents;
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+table {
+            margin: 0 auto;
+            width: 70%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    
+
+  </style>
+</head>
+<body>
+
+<img src="image/banner.jpg" alt="Banner">
+<nav class="menu">
+  <ul>
+    <li><a href="#" target="_blank">Home</a></li>
+    <li><a href="news.html" target="_blank">News</a></li>
+    <li><a href="faculty.html" target="_blank">Faculty</a></li>
+    <li><a href="professional traning.html" target="_blank">Professional Training</a></li>
+    <li class="dropdown">
+      <a href="#">Degree Programs</a>
+      <ul class="dropdown-menu">
+        <li><a href="#" target="_blank">Information Technology Since 2003</a></li>
+        <li><a href="#" target="_blank">Computer Science since 2003</a></li>
+        <li><a href="#" target="_blank">Electronics and Telecommunications Since 2003</a></li>
+        <li><a href="#" target="_blank">Graphic Design And Multimedia New 2025</a></li>
+        <li><a href="#" target="_blank">Business Management Information New 2025</a></li>
+        <li><a href="#" target="_blank">Network Engineering and Cyber security New 2025</a></li>
+        <li><a href="#" target="_blank">Data Science and Artificial Intelligence New 2025</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">Computer Labs</a>
+      <ul class="dropdown-menu" style="min-width: auto;">
+        <li><a href="#" target="_blank">Multimedia Lab</a></li>
+        <li><a href="#" target="_blank">E-learning Lab</a></li>
+        <li><a href="#" target="_blank">Networking Lab</a></li>
+        <li><a href="#" target="_blank">IT Center Lab</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<h2 class="free">
+    លោកគ្រូ​ ​អ្នកគ្រូ បង្រៀនក្នុង មហាវិទ្យាល័យវិទ្យាសាស្ដ្រ និងបច្ចេកវិទ្យានៃសាកលវិទ្យាល័យកម្ពុជា
+</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+      <th>Photo</th>
+      <th>Tel</th>
+      <th>Courses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Teav Chhunnan</td>
+      <td><img src="Faculty pic/pic1.png" style="width:100px ;"></td>
+      <td>093777552@cost_uc</td>
+      <td>Basic ITE101, HTML, CSS, Repairing, Cisco network</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Nhanh Nhim</td>
+      <td><img src="Faculty pic/pic2.png" style="width:100px ;"></td>
+      <td>070295027@Nhanh_Nhim</td>
+      <td>Basic ITE101, Graphic, UI/UX, C++, Java</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Y Sokha</td>
+      <td><img src="Faculty pic/pic3.png" style="width:100px ;"></td>
+      <td>077211988@YSokha</td>
+      <td>ITE101, BUS202</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Dan Tangoun</td>
+      <td><img src="Faculty pic/pic4.png" style="width:100px ;"></td>
+      <td>077339964@dantangoun</td>
+      <td>ITE101, Web, JavaScript, PHP, Python</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Chhay Buntha</td>
+      <td><img src="Faculty pic/pic5.png" style="width:100px ;"></td>
+      <td>078428214@ChBuntha</td>
+      <td>Repair, Cisco Network</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Chhoeung Ranya</td>
+      <td></td>
+      <td>010914193@RanyaPhD</td>
+      <td>ITE101, Web, HTML, CSS, PHP, Java</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Mork Ratha</td>
+      <td></td>
+      <td>017307327</td>
+      <td>Java, JavaScript, database, web</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Sokun Prosith</td>
+      <td><img src="Faculty pic/pic8.png" style="width:100px ;"></td>
+      <td>017431186@username85517431186</td>
+      <td>ITE101K, HTM,CSS, Java</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Tim Simatre</td>
+      <td><img src="Faculty pic/pic9.png" style="width:100px ;"></td>
+      <td>0963777141@timsimatre</td>
+      <td>ITE101K</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Vichhaiy Serey</td>
+      <td><img src="Faculty pic/pic10.png" style="width:100px ;"></td>
+      <td>015370170@vichhaiyserey</td>
+      <td>Cyber, AI, DevOps, Data Mining, Data Science</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Un Virak</td>
+      <td><img src="Faculty pic/pic11.png" style="width:100px ;"></td>
+      <td>012717261@virakuhs</td>
+      <td>Java, Database, Mobile App, Web</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Sann Sophar</td>
+      <td></td>
+      <td>016801119@sopharwind</td>
+      <td>C++, Java, Database SQL, Web</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Prak Samrith</td>
+      <td><img src="Faculty pic/pic13.png" style="width:100px ;"></td>
+      <td>098795357@praksamrith_kh</td>
+      <td>Mobile App, Web, Database</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Yann Soursdey</td>
+      <td><img src="Faculty pic/pic14.png" style="width:100px ;"></td>
+      <td>010265668</td>
+      <td>Database, HTML, CSS, Web, Digital Marketing</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Yoeung Vibol</td>
+      <td><img src="Faculty pic/pic15.png" style="width:100px ;"></td>
+      <td>093910871@vibolyoeung</td>
+      <td>Web CSS, JavaScript, PHP, Android</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pakrigna Long</td>
+      <td><img src="Faculty pic/pic16.png" style="width:100px ;"></td>
+      <td>010644496@Pakrigna</td>
+      <td>Python, AI/ML, Sensors, embedded systems</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Long Sothea</td>
+      <td><img src="Faculty pic/pic17.png" style="width:100px ;"></td>
+      <td>012252730@IntgSIS</td>
+      <td>Web CSS, JavaScript, PHP, ASP, C#, Database</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Hang Youlay</td>
+      <td><img src="Faculty pic/pic18.png" style="width:100px ;"></td>
+      <td>0968650464@Youlayhang</td>
+      <td>C++, Database, Programming, Android</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Noun Ngoeun</td>
+      <td></td>
+      <td>092847188@noun_ngoeun092</td>
+      <td>PHP, .NET, SQL, AI</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Tonn Daroth</td>
+      <td></td>
+      <td>093522272@Tonnsaroth</td>
+      <td>ITE101K</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Phon Sopheap</td>
+      <td><img src="Faculty pic/pic21.png" style="width:100px ;"></td>
+      <td>093662016</td>
+      <td>Network Cisco, Server, Linux, Security, Repairing</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Chhoy Seila</td>
+      <td><img src="Faculty pic/pic22.png" style="width:100px ;"></td>
+      <td>093777599@Seilac</td>
+      <td>Network Cisco, Server, Linux, Security, AI/ML</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Chan Rachna</td>
+      <td></td>
+      <td>070707670</td>
+      <td>ITE101, Graphic, Digital Media</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Meas Sovann</td>
+      <td><img src="Faculty pic/pic24.png" style="width:100px ;"></td>
+      <td>015539166@sovannhi</td>
+      <td>Web CSS, JavaScript, PHP</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Dr.Lypengleang</td>
+      <td><img src="Faculty pic/pic25.png" style="width:100px ;"></td>
+      <td>016799912@lypengleang</td>
+      <td>Database, .NET</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Sreang Kosal</td>
+      <td><img src="Faculty pic/pic26.png" style="width:100px ;"></td>
+      <td></td>
+      <td>Database</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Long Nipaul</td>
+      <td><img src="Faculty pic/pic27.png" style="width:100px ;"></td>
+      <td>078292701@nipaullong</td>
+      <td>Database, Web, Mobile App</td>
+    </tr>
+  </tbody>
+</table>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="image/facebook.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.twitter.com" target="_blank">
+        <img src="image/twitter.png" alt="Twitter" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="image/instagram.png" alt="Instagram" class="social-icon">
+      </a>
+    </div>
+    <H2>Develop  by  Kris Layheang</H2>
+    <p>&copy; 2024 University of Cambodia. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
